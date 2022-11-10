@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  width: min(317px, 95%);
+  min-height: 80vh;
+  background: #1A1B21;
+  border-radius: 10px;
+  margin: auto;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  padding-top: 20px;
+  color: white;
+  padding-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image{
+ width: min(317px, 100%);
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+
+header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+}
+
+.nav-contents{
+  margin-top: 21px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-contents-texts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-contents-texts h3{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-contents-texts p{
+  font-size: 13px;
+  font-weight: 100;
+  color: #F3BF99;
+  margin: 0;
+}
+
+.nav-contents-texts span{
+  font-size: 10px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.nav-contents-buttons{
+  display: flex;
+  gap: 17px;
+  flex-wrap: wrap;
+  padding: 0 5px;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.emailbutton{
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  border: none;
+  width: 115px;
+  justify-content: center;
+  gap:8px;
+  border-radius: 6px;
+  height: 34px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.emailbutton img{
+  width: 16px;
+}
+
+.linkedinbutton{
+  display: flex;
+  align-items: center;
+  border: none;
+  width: 115px;
+  justify-content: center;
+  gap:8px;
+  border-radius: 6px;
+  background-color: #5093E2;
   color: white;
+  text-decoration-line: none;
+  height: 34px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.linkedinbutton:focus, .emailbutton:focus{
+  outline: none;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ABOUT STYLING STARTS HERE */
+
+.about{
+  margin-top: 33px; 
+  width: 78%;
+}
+
+.about h3{
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.about p{
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 150%;
+  color: #DCDCDC;
+}
+
+
+/* INTEREST STYLING STARTS HERE */
+
+.interest{
+  margin-top: 27px; 
+   width: 78%;
+}
+
+.interest h3{
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.interest p{
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 150%;
+  color: #DCDCDC;
+}
+
+
+/* FOOTER STYLING STARTS HERE */
+
+.footer{
+  width: 100%;
+  min-height: 64px;
+  background-color: #161619;
+  margin-top: 41px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 10px 10px
 }
